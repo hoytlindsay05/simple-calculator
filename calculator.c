@@ -19,36 +19,68 @@ int main()
 	{
 		case 1:
 			printf("Enter first value\n");
-			scanf("%d", &num1);
+			if (scanf("%d", &num1) != 1)
+			{
+				printf("Invalid input");
+				break;
+			}
 			printf("Enter second value\n");
-			scanf("%d", &num2);
+			if (scanf("%d", &num2) != 1)
+			{
+				printf("Invalid input");
+				break;
+			}
 			
 			int_result = add(num1, num2);
 			printf("%d\n", int_result);
 			break;
 		case 2:
 			printf("Enter first value\n");
-			scanf("%d", &num1);
+			if (scanf("%d", &num1) != 1)
+			{
+				printf("Invalid input");
+				break;
+			}
 			printf("Enter second value\n");
-			scanf("%d", &num2);
+			if (scanf("%d", &num2) != 1)
+			{
+				printf("Invalid input");
+				break;
+			}
 			
 			int_result = sub(num1, num2);
 			printf("%d\n", int_result);
 			break;
 		case 3:
 			printf("Enter first value\n");
-			scanf("%d", &num1);
+			if (scanf("%d", &num1) != 1)
+			{
+				printf("Invalid input");
+				break;
+			}
 			printf("Enter second value\n");
-			scanf("%d", &num2);
+			if (scanf("%d", &num2) != 1)
+			{
+				printf("Invalid input");
+				break;
+			}
 			
 			int_result = mult(num1, num2);
 			printf("%d\n", int_result);
 			break;
 		case 4:
 			printf("Enter first value\n");
-			scanf("%d", &num1);
+			if (scanf("%d", &num1) != 1)
+			{
+				printf("Invalid input");
+				break;
+			}
 			printf("Enter second value\n");
-			scanf("%d", &num2);
+			if (scanf("%d", &num2) != 1)
+			{
+				printf("Invalid input");
+				break;
+			}
 			
 			if (num2 == 0)
 			{
