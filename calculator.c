@@ -8,20 +8,60 @@ float div(int x, int y);
 
 int main()
 {
-	int int_result;
+	int int_result, input, num1, num2;
 	float div_result;
 	
-	int_result = add(3, 4);
-	printf("%d\n", int_result);
+	printf("Select Operation:\n");
+	printf("1 for addition\n2 for subtraction\n3 for multiplication\n4 for division\n");
+	scanf("%d", &input);
 	
-	int_result = sub(4, 3);
-	printf("%d\n", int_result);
-	
-	int_result = mult(3, 4);
-	printf("%d\n", int_result);
-	
-	div_result = div(4, 2);
-	printf("%.2f\n", div_result);
+	switch(input)
+	{
+		case 1:
+			printf("Enter first value\n");
+			scanf("%d", &num1);
+			printf("Enter second value\n");
+			scanf("%d", &num2);
+			
+			int_result = add(num1, num2);
+			printf("%d\n", int_result);
+			break;
+		case 2:
+			printf("Enter first value\n");
+			scanf("%d", &num1);
+			printf("Enter second value\n");
+			scanf("%d", &num2);
+			
+			int_result = sub(num1, num2);
+			printf("%d\n", int_result);
+			break;
+		case 3:
+			printf("Enter first value\n");
+			scanf("%d", &num1);
+			printf("Enter second value\n");
+			scanf("%d", &num2);
+			
+			int_result = mult(num1, num2);
+			printf("%d\n", int_result);
+			break;
+		case 4:
+			printf("Enter first value\n");
+			scanf("%d", &num1);
+			printf("Enter second value\n");
+			scanf("%d", &num2);
+			
+			if (num2 == 0)
+			{
+				printf("Error: Division by 0\n");
+				break;
+			}
+			
+			div_result = div(num1, num2);
+			printf("%.2f\n", div_result);
+			break;
+		default:
+			printf("Invalid input\n");
+	}
 	return 0;
 }
 
